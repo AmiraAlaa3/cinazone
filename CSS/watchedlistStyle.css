@@ -1,0 +1,133 @@
+@import "../CSS/global.css";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap');
+
+.header .pages {
+    padding: 24px 0;
+    margin-bottom: 30px;
+}
+
+.header .pages a {
+    color: #fff;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.header .pages a.active{
+    color: #03E1F5;
+    text-decoration-line: underline;
+}
+
+
+.page-title {
+    color: #FFF;
+    font-family: 'Arima', cursive;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin: 30px 0;
+}
+
+.movie-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,210px));
+    gap: 40px;
+    justify-content: space-around;
+
+}
+
+.movie-card {
+    background-color: transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.movie-card .movie-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+
+}
+
+.add-to-watched-list {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.remove-from-watched-list {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.movie-info {
+    padding: 10px;
+}
+
+.movie-title {
+    color: #FFF;
+    text-overflow: ellipsis;
+    font-family: 'Arima', cursive;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.movie-time-year,
+.movie-rate-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 0;
+}
+
+.movie-time-year .movie-release-year,
+.movie-rate-type .movie-type {
+    color: #03E1F5;
+    font-family: Mulish;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.movie-time-year .time,
+.movie-rate-type .rate {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.custom-svg path:first-child {
+    fill: white;
+    /* Change the fill color of the first path to red */
+}
